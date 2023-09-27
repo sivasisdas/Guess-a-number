@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            background-color: blueviolet;
+        }
+        .container{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            background-color: aliceblue;
+            font-size: 30px;
+            border-radius: 10px;
+        }
+        input[type="submit"]{
+            width: 30%;
+            margin-inline: auto;
+            background-color: purple;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            margin-top: 6px;
+        }
+        input[type='number']{
+            width: 60%;
+            margin-inline: auto;
+            border-radius: 10px;
+            text-indent: 5%;
+        }
+        .reset{
+            margin-top: 6px;
+            width: 30%;
+            margin-inline: auto;
+            background-color: rgb(128, 0, 21);
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Enter a guess: </h2>
+        <label>Guess a number between 1-100</label>
+        <input type="number" id="guessField" class="guessField" />
+        <input type="submit" value="Submit guess" class="guessSubmit" />
+        <div class="resultParas">
+            <p class="result"></p>
+            <p class="guesses"></p>
+            <p class="lastGuesses"></p>
+            <p class="lowOrHi"></p>
+        </div>
+    </div>
+
+
+    <script src="jimy.js"></script>   
+</body>
+</html>
